@@ -1,0 +1,104 @@
+/* 慧思政题库导出 - Floating Panel Styles */
+#huisizheng-export-panel {
+  position: fixed;
+  top: 100px;
+  right: 16px;
+  width: 240px;
+  background: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 4px 24px rgba(0, 0, 0, 0.15);
+  z-index: 99999;
+  font-family: "PingFang SC", "Microsoft YaHei", "Helvetica Neue", Arial, sans-serif;
+  overflow: hidden;
+  transition: box-shadow 0.2s;
+}
+#huisizheng-export-panel:hover {
+  box-shadow: 0 6px 32px rgba(0, 0, 0, 0.22);
+}
+
+/* Header */
+.hse-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px 14px 8px;
+  border-bottom: 1px solid #f0f0f0;
+}
+.hse-title {
+  font-size: 14px;
+  font-weight: 700;
+  color: #333;
+}
+.hse-count {
+  font-size: 12px;
+  font-weight: 600;
+  padding: 2px 8px;
+  border-radius: 10px;
+  background: #f5f5f5;
+}
+
+/* Buttons area */
+.hse-buttons {
+  padding: 10px 12px 12px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+/* Button base */
+.hse-btn {
+  width: 100%;
+  padding: 10px 0;
+  border: none;
+  border-radius: 8px;
+  font-size: 13px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.15s ease;
+  font-family: inherit;
+}
+.hse-btn:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.12);
+}
+.hse-btn:active {
+  transform: translateY(0);
+  box-shadow: none;
+}
+
+/* Export with answers */
+.hse-btn-full {
+  background: #e8f5e9;
+  color: #2e7d32;
+}
+.hse-btn-full:hover {
+  background: #c8e6c9;
+}
+
+/* Export without answers */
+.hse-btn-noans {
+  background: #e3f2fd;
+  color: #1565c0;
+}
+.hse-btn-noans:hover {
+  background: #bbdefb;
+}
+
+/* Answer key only */
+.hse-btn-key {
+  background: #fff3e0;
+  color: #e65100;
+}
+.hse-btn-key:hover {
+  background: #ffe0b2;
+}
+
+/* Footer */
+.hse-footer {
+  padding: 6px 14px 10px;
+  text-align: center;
+}
+.hse-id {
+  font-size: 11px;
+  color: #bbb;
+}

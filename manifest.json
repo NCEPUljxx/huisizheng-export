@@ -1,0 +1,21 @@
+{
+  "manifest_version": 3,
+  "name": "慧思政题库导出",
+  "version": "1.0",
+  "description": "一键导出慧思政平台题目，支持带答案/不带答案/仅答案三种模式",
+  "permissions": ["activeTab"],
+  "host_permissions": ["*://pc.hdhuisizheng.com/*"],
+  "content_scripts": [
+    {
+      "matches": ["*://pc.hdhuisizheng.com/*"],
+      "js": ["content.js"],
+      "css": ["content.css"],
+      "run_at": "document_idle"
+    }
+  ],
+  "icons": {
+    "16": "icons/icon16.png",
+    "48": "icons/icon48.png",
+    "128": "icons/icon128.png"
+  }
+}
